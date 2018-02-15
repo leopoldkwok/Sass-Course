@@ -1,33 +1,6 @@
 
 @import "variables";
-
-@mixin warning {
-  background-color: orange;
-  color: #fff;
-}
-
-@mixin large-text {
-  font: {
-    size: 22px;
-    weight: bold;
-  }
-}
-
-@mixin rounded {
-  border-radius: 6px;
-}
-
-@mixin box {
-  @include rounded;
-  border: 1px solid #333;
-}
-
-@mixin fancy-links {
-  a {
-    font-style: italic;
-    text-decoration: none;
-  }
-}
+@import "mixins";
 
 @include fancy-links;
 
@@ -58,7 +31,8 @@ a {
 }
 
 #header {
-  @include box;
+  @include box($border: 1px solid #fff, $radius: 12px);
+  @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
   height: $header-height;
   background-color: $theme-color;
 
