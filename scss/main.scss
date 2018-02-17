@@ -59,13 +59,18 @@ a {
   font-size: em(20px);
 }
 
+@mixin warning-button {
+  @include warning;
+  padding: 8px 12px;
+}
+
 .warning-button {
   @include warning;
   padding: 8px 12px;
 }
 
 .cta-button {
-  @extend .warning-button;
+  @include warning-button;
   @extend .error;
   @include rounded;
   font-weight: bold;
