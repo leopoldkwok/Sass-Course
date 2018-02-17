@@ -24,13 +24,8 @@ $contrast: normal;
 body {
   font-family: sans-serif;
   font-size: em(18px);
-  @if $contrast == high {
-    color: #000;
-  } @else if $contrast == low {
-    color: #999;
-  } @else {
-    color: $text-color;
-  }
+  color: $text-color;
+  background-color: $body-background-color;
   
   @include large-screens {
     font-size: 125%;
