@@ -18,6 +18,30 @@
 .col-6 {
   width: 12em; }
 
+.bob-banker-profile {
+  background-image: url("/img/bob-banker.png"); }
+
+.patty-plume-profile {
+  background-image: url("/img/patty-plume.png"); }
+
+.sandra-smith-profile {
+  background-image: url("/img/sandra-smith.png"); }
+
+.tiny {
+  font-sizes: 8px; }
+
+.small {
+  font-sizes: 11px; }
+
+.medium {
+  font-sizes: 13px; }
+
+.large {
+  font-sizes: 18px; }
+
+.picture-2 {
+  width: 20%; }
+
 a {
   font-style: italic;
   text-decoration: none; }
